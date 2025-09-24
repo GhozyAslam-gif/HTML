@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Table</title>
+    <style>
+        #table-basic {
+            width: 60%;
+            border-collapse: collapse;
+        }
+        #table-basic td {
+            padding: 6px;
+            font-size: 16px;
+        }
+        #table-basic .bg-blue {
+            background-color: darkblue;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML 5 Table</h1>
+    <hr />
+    <h3>Table Dasar</h3>
+    <!-- <tr> : untuk membuat baris -->
+    <!-- <td> : untuk membuat data/kolom -->
+    <table border="1" id="table-basic">
+        <tr class="bg-blue">
+            <td>No</td>
+            <td>Nama</td>
+            <td>Asal</td>
+        </tr>
+        <!-- shortcut: tr>td*3 -->
+        <tr>
+            <td>1.</td>
+            <td>Yunus</td>
+            <td>Medan</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Bilal</td>
+            <td>Planet Bekasi</td>
+        </tr>
+        
+        <tr>
+            <td>3.</td>
+            <td>Abdullah</td>
+            <td>Tangerang</td>
+        </tr>
+    </table>
+
+    <h3>Table Standard</h3>
+    <!-- shortcut: table>thead+tbody+tfoot -->
+    <!-- <th> : untuk membuat data/kolom di thead -->
+     <table border="1" border="width: 50%;" id="table-basic">
+        <thead>
+            <tr class="bg-blue">
+                <th>NO</th>
+                <th>Tanggal</th>
+                <th>Nama Barang</th>
+                <th>Harga Barang</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>21/09/2025</td>
+                <td>Es Teh Desa</td>
+                <td>2.500</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>22/09/2025</td>
+                <td>Tahu gimbal</td>
+                <td>5.000</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>23/09/2025</td>
+                <td rowspan="2">Roti Gembung Coklat kacang</td>
+                <td>20.000</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>24/09/2025</td>
+                <!--<th>Roti Gembung Coklat kacang</th> -->
+                <td>20.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- colspan: menggabungkan kolom -->
+                <td colspan="3"><b>Total Pengeluaran</b></td>
+                <td><b>Rp.27.500</b></td>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>
