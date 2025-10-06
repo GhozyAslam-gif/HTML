@@ -159,19 +159,45 @@ body {
 }
 
 /* Kelompok tombol rata kanan */
+
+
+/* Kelompok tombol rata kanan */
 .button-group {
   text-align: right;
 }
-/* Tombol Reset → Abu-abu */
-.button-group button[type="reset"] {
-  background-color: #6b7280; /* abu tua */
-}
-/* Tombol Submit → Biru */
-.button-group button[type="submit"] {
-  background-color: #2563eb; /* biru */
+
+/* Desain umum semua tombol di dalam .button-group */
+.button-group button {
+  appearance: button;
+  background-color: #2563eb; /* default biru */
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;         /* supaya tetap sejajar & bisa center text */
+  align-items: center;          /* teks rata tengah secara vertikal */
+  justify-content: center;      /* teks di tengah horizontal */
+  font-family: "RM Neue", sans-serif;
+  font-size: 75%;
+  padding: 10px 21px;
+  margin-left: 10px;            /* jarak antar tombol */
+  transition: background 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+  user-select: none;
 }
 
-/* ===== Gallery Grid ===== */
+/* Tombol Reset → Abu-abu */
+.button-group button[type="reset"] {
+  background-color: #6b7280;
+}
+
+/* Tombol Submit → Biru (default sudah biru, tapi kita pertegas) */
+.button-group button[type="submit"] {
+  background-color: #2563eb;
+}
+
+
+
 .gallery {
   text-align: center;
 }
