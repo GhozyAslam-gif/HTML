@@ -62,7 +62,6 @@ body {
 }
 
 
-
 .navbar {
   margin: 10px 0;
   text-align: center;
@@ -83,15 +82,11 @@ body {
   font-size: 14px;
   background: #fff;
 }
-.navbar a:hover {
-  background: #f3f4f6;
-}
 .navbar a.active {
   background: #1b3a8a;
   color: #fff;
   border-color: #1b3a8a;
 }
-
 .navbar hr {
   max-width: 720px;
   border: none;
