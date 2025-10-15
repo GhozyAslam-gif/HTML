@@ -61,7 +61,7 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.04);
 }
 
-
+/* Navbar */
 .navbar {
   margin: 10px 0;
   text-align: center;
@@ -93,6 +93,7 @@ body {
   border-top: 1px solid #121212;
   margin: 30px auto 0;
 }
+
 
 .section-title {
   border-left: 4px solid #fbbf24; /* kuning */
@@ -139,13 +140,15 @@ body {
   gap: 6px;
 }
 
+/* Tabel Sederhana */
 #table-basic {
     width: 100%;
    border-collapse: collapse;
    text-align: center;
+   box-shadow: #11182733 0 1px 3px, #1118271a 0 1px 2px;
 }
 #table-basic td {
-  padding: 10px;
+  padding: 10px; /* jarak dalam sel */
   font-size: 16px;
 }
 #table-basic .bg-blue {
@@ -163,7 +166,7 @@ body {
 .button-group button {
   appearance: button;
   background-color: #2563eb; /* default biru */
-  border: none;
+  border: none; /* hilangkan border default */
   border-radius: 8px;
   box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
   color: #fff;
@@ -173,10 +176,8 @@ body {
   justify-content: center;      /* teks di tengah horizontal */
   font-family: "RM Neue", sans-serif;
   font-size: 75%;
-  padding: 10px 21px;
+  padding: 10px 21px; /* jarak dalam tombol */
   margin-left: 10px;            /* jarak antar tombol */
-  transition: background 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
-  user-select: none;
 }
 
 /* Tombol Reset → Abu-abu */
@@ -189,8 +190,7 @@ body {
   background-color: #2563eb;
 }
 
-
-
+/* Galeri Foto */
 .gallery {
   text-align: center;
 }
@@ -208,11 +208,10 @@ body {
   width: 100%;
   max-height: 140px;   /* tinggi gambar dibatasi */
   object-fit: cover;   /* biar gambar tetap proporsional */
-  
 }
 
 
-/* ===== Video Embed ===== */
+/* Video Embed */
 .video-container {
   display: flex;
   justify-content: center;
