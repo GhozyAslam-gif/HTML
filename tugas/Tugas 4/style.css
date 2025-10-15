@@ -1,0 +1,11 @@
+/* File: tugas/Tugas%204/style.css */
+@font-face {
+    font-family: BismillahScript;
+    src: url(font/Bismillah\ Script.ttf);
+}
+.signature {
+  font-family: 'BismillahScript', cursive;
+  font-size: 22px;
+  color: #b91c1c;
+  text-align: right;
+}
