@@ -1,7 +1,15 @@
 body {
   margin: 0;
     height: 100vh;
-    background: linear-gradient(135deg, #402E7A, #4C3BCF, #4B70F5, #3DC2EC);
+    background: linear-gradient(100deg, #402E7A, #4C3BCF);
+}
+@font-face {
+    font-family: BismillahScript;
+    src: url(font/Bismillah\ Script.ttf);
+}
+@font-face {
+  font-family: The Last Shuriken;
+  src: url(font/The\ Last\ Shuriken.otf);
 }
 header {
   background-color: #cbf4f7;
@@ -24,10 +32,10 @@ header p {
   border-radius: 8px;
   padding: 10px;
   margin: 20px;
-  background-color: #eafcce;
-  letter-spacing: 0.9px;
-  word-spacing: 2px;
-  line-height: 1.5;
+  background-color: #eedbff;
+  letter-spacing: 0.9px;  /* Jarak antar huruf */
+  word-spacing: 2px;  /* Jarak antar kata */
+  line-height: 1.5;  /* Jarak antar baris */
   padding-left: 20px;
 }
 .box h2 {
@@ -39,15 +47,15 @@ header p {
 .box span.font2 {
   color: red;
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: underline; /* Garis bawah */
 }
 
 blockquote {
-  background: #5faaff;
+  background: #6dc9ff;
   border-left: 10px solid #a0a09f;
   margin: 20px;
   padding: 15px 20px;
-  color: #e5fbff;
+  color: #003366;
 }
 
 .note {
@@ -59,14 +67,6 @@ blockquote {
   color: #665c00;
 }
 /* File: tugas/Tugas%204/style.css */
-@font-face {
-    font-family: BismillahScript;
-    src: url(font/Bismillah\ Script.ttf);
-}
-@font-face {
-  font-family: The Last Shuriken;
-  src: url(font/The\ Last\ Shuriken.otf);
-}
 .penulis1 {
   margin-right: 20px;
 }
@@ -82,12 +82,12 @@ blockquote {
 }
 .signature {
   font-family: 'BismillahScript', cursive;
-  font-size: 30px;
-  color: #b91c1c;
+  font-size: 35px;
+  color: gray;
   text-align: right;
 }
 footer {
-  background-color: #7f49ff;
+  background-color: rgb(23, 23, 172);
   color: rgb(186, 193, 199);
   margin: 10px;
   padding: 10px;
