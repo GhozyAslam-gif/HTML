@@ -1,0 +1,107 @@
+.box {
+   border-radius: 8px;
+   font-weight: bold;
+  padding: 10px;
+  margin: 30px;
+  background-color: #efeded;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.alert {
+  background-color: #cae9f2;
+  color: #144e6e;
+  padding: 15px 50px 15px 15px;
+  border-radius: 8px;
+  position: relative;
+  font-size: 14px;
+  margin: 0 0 20px 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.close {
+  position: absolute;
+  right: 18px;
+  background-color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #336699;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.profile-card {
+  width: 210px;
+  height: 190px;
+  padding: 30px;
+  padding-bottom: 50px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  margin: 20px auto;
+}
+.avatar {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px auto;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile-card .avatar .badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+} 
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.pricing {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 14px;
+  align-items: center;
+}
+.plan {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.highlight {
+   border: 2px solid blue;
+ width: 220px;
+  height: 240px;
+}
+.price {
+  font-size: 24px;
+  font-weight: normal;
+  color: blue;
+}
+/* From Uiverse.io by KINGFRESS */ 
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #5500ff;
+  padding: 1em 2em;
+  border: none;
+  border-radius: .6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
