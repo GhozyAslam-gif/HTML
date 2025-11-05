@@ -39,18 +39,73 @@ body {
   color: #666;
 }
 
+.main-nav {
+  margin-top: 14px;
+}
+.main-nav ul {
+  /* reset bunderan nya */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  /* agar list nya kebawah otomatis */
+  flex-wrap: wrap;
+}
+.main-nav ul li a {
+  color: white;  
+  text-decoration: none;
+  background: blueviolet;
+  /* 6px => atas bawah */
+  /* 20px => kiri kanan */
+  padding: 6px 20px;
+  border-radius: 6px;
+  display: block;
+}
 
 /* ukuran 1024px => desktop++ */
 @media screen and (min-width: 1024px) {
   /* masukkan tag / target selector */
+  .site-header {
+    background: indigo;
+    color: white;
+  }
+  .site-header p { 
+    color: white;
+  }
 }
 
 /* ukuran 768-1023px => tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* masukkan tag / target selector */
+  .site-header {
+    background: tomato;
+    color: white;
+  }
+  .site-header p { 
+    color: white;
+  }
+  .main-nav ul li {
+    flex-grow: 1; /* boleh melebar */
+    flex-shrink: 1; /* boleh menyusut */
+    flex-basis: calc(33.33%); /* Lebar dasar 33.33% (2 kolom) */
+  }
 }
 
 /* ukuran max 767px => smartphone */
 @media screen and (max-width: 767px) {
   /* masukkan tag / target selector */
+  .site-header h1 {
+    /* kecilin font biar gk bablas */
+    font-size: 24px;
+    color: indigo;
+  }
+  .site-header p { 
+    /* kecilin font biar gk bablas */
+    font-size: 14px;
+  }
+  .main-nav ul li {
+    flex-grow: 1;    /* Boleh melebar */
+    flex-shrink: 1;  /* Boleh menyusut */
+    flex-basis: 100%; /* Lebar dasar full 100% */
+  }
 }

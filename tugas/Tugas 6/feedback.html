@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Umpan Balik</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <h1>Formulir Umpan Balik</h1>
+    <p class="subtitle">Kritik, Saran, dan Masukan</p>
+    <hr>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="biodata.html">Biodata</a></li>
+      <li><a href="jadwal.html">Jadwal</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="feedback.html" class="active">Feedback</a></li>
+    </ul>
+    <hr>
+  </nav>
+
+  <!-- Container -->
+  <div class="container">
+    <div class="box">
+      <h3 class="section-title">Formulir Kontak & Saran</h3>
+      <p>
+        Berikan masukan terbaik Anda untuk pengembangan website profil ini. 
+        Semua input bersifat wajib kecuali nama.
+      </p>
+
+      <form>
+
+        <!-- Nama -->
+        <div>
+          <label for="nama">Nama Anda (Opsional):</label>
+          <br>
+          <input type="text" id="nama" name="nama" placeholder="Tulis nama Anda">
+          <br><br>
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email">Email Anda:</label>
+          <br>
+          <input type="email" id="email" name="email" placeholder="nama@gmail.com" required>
+          <br><br>
+        </div>
+
+        <!-- Rating -->
+        <div>
+          <label for="rating">Rating Kepuasan Website (Skala 1-10):</label>
+          <br>
+          <input type="number" id="rating" name="rating" placeholder="Masukkan angka 1 hingga 10" required>
+          <br><br>
+        </div>
+
+        <!-- Rekomendasi -->
+        <div>
+          <label>Rekomendasi Website Ini?</label>
+          <div>
+            <input type="radio" id="ya" name="rekomendasi" value="ya" required>
+            <label for="ya">Ya, Sangat</label>
+
+            <input type="radio" id="mungkin" name="rekomendasi" value="mungkin">
+            <label for="mungkin">Mungkin Saja</label>
+
+            <input type="radio" id="tidak" name="rekomendasi" value="tidak">
+            <label for="tidak">Tidak</label>
+            <br><br>
+          </div>
+        </div>
+
+        <!-- Topik -->
+        <div>
+          <label>Topik yang paling menarik:</label>
+          <div>
+            <input type="checkbox" id="biodata" name="topik" value="Biodata">
+            <label for="biodata">Biodata</label>
+
+            <input type="checkbox" id="jadwal" name="topik" value="Jadwal">
+            <label for="jadwal">Jadwal</label>
+
+            <input type="checkbox" id="galeri" name="topik" value="Galeri">
+            <label for="galeri">Galeri</label>
+
+            <input type="checkbox" id="feedback" name="topik" value="Feedback">
+            <label for="feedback">Feedback</label>
+
+            <br><br>
+          </div>
+        </div>
+
+        <!-- Bidang -->
+        <div>
+          <label for="bidang">Saran Pengembangan di Bidang:</label>
+          <select id="bidang" name="bidang" required>
+            <option value="">-- Pilih Bidang --</option>
+            <option value="Desain">Desain</option>
+            <option value="Konten">Konten</option>
+            <option value="Ngoding">Ngoding</option>
+          </select>
+          <br><br>
+        </div>
+
+        <!-- Pesan -->
+        <div>
+          <label for="pesan">Pesan/Saran Lengkap:</label><br>
+          <textarea id="pesan" name="pesan" placeholder="Tulis pesan dan saran Anda secara detail di sini..." required></textarea>
+          <br><br>
+        </div>
+
+        <!-- Tombol -->
+        <div class="button-group">
+                <!-- tips shortcut: button: [type-nya]-->
+                 <button type="reset">Atur Ulang</button>
+                 <button type="submit">Kirim Feedback</button>
+            </div>
+      
+
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

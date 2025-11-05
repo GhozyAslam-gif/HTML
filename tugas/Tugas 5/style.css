@@ -19,8 +19,8 @@
 .close {
   position: absolute;
   right: 18px;
-  background-color: white;
-  top: 50%;
+  background-color: #cae9f2;
+  top: 53%;
   transform: translateY(-50%);
   font-size: 1.4em;
   font-weight: bold;
@@ -52,7 +52,7 @@
   border-radius: 50%;
   object-fit: cover;
 }
-.profile-card .avatar .badge {
+.badge {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -101,7 +101,7 @@ button {
   padding: 1em 2em;
   border: none;
   border-radius: .6rem;
-  position: relative;
   cursor: pointer;
   overflow: hidden;
 }
+
