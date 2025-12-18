@@ -1,0 +1,31 @@
+/* style.css */
+
+/* Mengimpor font (opsional, tapi menunjukkan kegunaan style.css) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa; /* Latar belakang body yang sedikit abu-abu */
+}
+
+/* Contoh kustomisasi warna brand.
+  Kita bisa menggunakan kelas 'bg-primary' bawaan Bootstrap, 
+  tapi jika HSI punya warna hijau spesifik, kita akan menimpanya di sini.
+  Untuk saat ini, kita biarkan default agar murni Bootstrap.
+*/
+
+/* Kustomisasi kecil pada navbar-brand jika diperlukan */
+.navbar img {
+    max-height: 40px; /* Memastikan logo tidak terlalu besar */
+    margin-right: 8px;
+}
+
+/* Menambahkan shadow yang konsisten pada card di galeri */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}

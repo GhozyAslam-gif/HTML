@@ -231,6 +231,14 @@ body {
 
 /* Mobile-first: tulis style dasar di sini */
 
+/* Form Styles Default (Mobile) */
+.kolom-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  width: 100%;
+}
+
 /* Tablet */
 @media (min-width: 600px) and (max-width: 1023px) {
   /* penyesuaian tablet */
@@ -240,12 +248,47 @@ body {
     flex-shrink: 1;  /* Boleh menyusut */
     flex-basis: calc(50% - 10%); /* Lebar dasar 50% - gap */
   }
+  .box {
+    position: relative;
+  }
+  .text-biodata {
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    text-align: left;
+    font-size: small;
+  }
+  .kolom-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .kolom-form .full-width {
+    grid-column: span 2;
+  }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
   /* penyesuaian desktop */
-  
+  .gallery .card {
+    flex-direction: column;
+    flex-grow: 5;
+    flex-shrink: 5;
+    flex-basis: calc(100%); /* Lebar dasar 25% - gap */
+  }
+  .kolom-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 60%; /* Adjust width to be reasonable */
+    margin: 0 auto; /* Center the form */
+  }
+  .kolom-form .full-width {
+    grid-column: span 2;
+  }
 }
 
 /* Mobile / Smartphone */
@@ -257,5 +300,21 @@ body {
     flex-shrink: 1;  /* Boleh menyusut */
     flex-basis: 100%; /* Lebar dasar full 100% */
   }
-  
+  .avatar {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    margin: 12px auto 14px;
+    align-items: center;
+    justify-content: center;
+  }
+  .table {
+    overflow-x: auto;
+    width: 100%;
+  }
+  .table table {
+    min-width: 600px; 
+    width: 100%; 
+    border-collapse: collapse;
+  }
 }
